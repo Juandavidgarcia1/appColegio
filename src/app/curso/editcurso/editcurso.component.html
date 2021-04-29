@@ -1,0 +1,29 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h1 align=center> Modificar cursos </h1>
+        </div>
+        <div class="card-body">
+           <form action="">
+                <div class="form-group">
+                    <div class="form-group">
+                        <label for="">Grado:</label>
+                        <input type="number" class="form-control" [(ngModel)]="curso.grado" name="grado">
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="">Colegio:</label>
+                        <input type="number" class="form-control" [(ngModel)]="curso.idColegio" name="idColegio">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="">Salón:</label>
+                        <input type="text" class="form-control" [(ngModel)]="curso.salon" name="salon">
+                    </div>
+                </div>
+                <br>
+                <button (click)="Actualizar(curso)" class="btn btn-danger">Actualizar</button>
+           </form>
+        </div> 
+    </div>   
+</div>

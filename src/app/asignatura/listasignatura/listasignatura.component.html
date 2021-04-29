@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <app-asignatura></app-asignatura>
+</div>
+<div class="card-body">
+    <table class="table table-hover">
+        <thead>
+            <tr class="text-center">
+                <th>ID</th>
+                <th>NOMBRE</th>
+                <th>PROFESOR</th>
+                <th>CURSO</th>
+                <th>ACCIONES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let asignatura of asignaturas" class="text-center">
+                <td>{{asignatura.id}}</td>
+                <td>{{asignatura.nombre}}</td>
+                <td>{{asignatura.idProfesor}}</td>
+                <td>{{asignatura.idCurso}}</td>
+                <td>
+                    <button (click)="Editar(asignatura)" class="btn btn-warning">Editar</button> 
+                    <button class="btn btn-danger"  style="margin-left: 10px;">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div> 
+</div>   
+</div>
